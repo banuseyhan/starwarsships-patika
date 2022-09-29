@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from '../img/logo.png'
+import logo from "../img/logo.png";
 
 export const Header = () => {
-   const [isMobileActive, setIsMobileActive] = useState('')
+  const [isMobileActive, setIsMobileActive] = useState("");
 
-   const toggleMenu = () => {
-    isMobileActive === 'active' ? setIsMobileActive('') : setIsMobileActive('active')
-   }
-
+  const toggleMenu = () => {
+    isMobileActive === "active"
+      ? setIsMobileActive("")
+      : setIsMobileActive("active");
+  };
 
   return (
     <header className={`header ${isMobileActive}`}>
       <div className="container header__container">
-        <div className="header__logo"><img src={logo} alt="logo" /></div>
+        <div className="header__logo">
+          <img src={logo} alt="logo" />
+        </div>
         <nav className="header__nav">
-          <ul className={`header__links ${isMobileActive}`} >
+          <ul className={`header__links ${isMobileActive}`}>
             <li className="header__links-item">
               <NavLink
                 exact="true"
@@ -27,9 +30,7 @@ export const Header = () => {
                 Main
               </NavLink>
             </li>
-            
-            
-            
+
             <li className="header__links-item">
               <NavLink
                 exact="true"
@@ -41,9 +42,13 @@ export const Header = () => {
                 Starships
               </NavLink>
             </li>
-            
           </ul>
-          <button className={`mobile-menu__btn ${isMobileActive}`} onClick={toggleMenu}><span></span></button>
+          <button
+            className={`mobile-menu__btn ${isMobileActive}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+          </button>
         </nav>
       </div>
     </header>
