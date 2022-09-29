@@ -1,10 +1,10 @@
 import "./App.css";
 import { Route, Switch } from "react-router";
 import { Main } from "./components/Main/Main";
-import { Starships } from "../src/components/Starships/Starships";
+import { Starships } from "./components/Starhips/Starships";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Detail } from "../src/components/Starships/Detail";
+import { Detail } from "./components/Starhips/Detail";
 const App = () => {
   return (
     <BrowserRouter>

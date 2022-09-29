@@ -10,7 +10,7 @@ import { Pagination } from '../Pagination/Pagination'
 import './Starships.css'
 export const Starships = () => {
     const {pathItem} = useParams() 
-    const [data, setData] = useState([])
+    const [ setData] = useState([])
     const [totalItems, setTotalItems] = useState(0)
     const [page, setPage] = useState(1)
     const [searchQuery, setSearchQuery] = useState('')
@@ -23,13 +23,12 @@ export const Starships = () => {
 
     useEffect(() => {
         fetchItems()
-    }, [])
+    }, [page, searchQuery, pathItem])
+
 
     useEffect(() => {
         setSearchQuery('')
-    }, [])
-
-   
+    }, [pathItem])
     return (
         <Template
         content={ 

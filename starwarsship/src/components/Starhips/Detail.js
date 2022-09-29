@@ -12,7 +12,7 @@ export const Detail = () => {
 
   const [starShips, setStarships] = useState([]);
 
-  const [homeworld, setHomeWorld] = useState("");
+  
   const [fetchSingleData] = useFetching(async () => {
     const dataResponse = await api.getSingleItem(id, pathItem);
 
@@ -20,12 +20,7 @@ export const Detail = () => {
       const starShipsResponse = await api.getStarshipsOfItem(dataResponse);
       setStarships(starShipsResponse.map((resp) => resp.data));
     }
-    if (dataResponse.data.homeworld) {
-      const homeworldResponse = await api.getAdditionData(
-        dataResponse.data.homeworld
-      );
-      setHomeWorld(homeworldResponse.data.name);
-    }
+    
 
     setData(dataResponse.data);
   });
@@ -33,7 +28,7 @@ export const Detail = () => {
   useEffect(() => {
     setStarships([]);
 
-    setHomeWorld("");
+   
     fetchSingleData();
   }, []);
 
@@ -62,12 +57,7 @@ export const Detail = () => {
                 );
               }
             })}
-            {homeworld && (
-              <li className="single-item__list-item">
-                <h2>homeworld:</h2>
-                {homeworld}
-              </li>
-            )}
+            
           </ul>
 
           {starShips.length > 0 && (
