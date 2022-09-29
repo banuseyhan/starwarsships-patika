@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../img/logo.png";
+import logo from "../../img/logo.png";
 
 export const Header = () => {
   const [isMobileActive, setIsMobileActive] = useState("");

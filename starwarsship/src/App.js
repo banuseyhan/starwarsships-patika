@@ -1,20 +1,12 @@
-import "./App.css";
-import { Route, Switch } from "react-router";
-import { Main } from "./components/Main/Main";
-import { Starships } from "./components/Starhips/Starships";
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Detail } from "./components/Starhips/Detail";
-const App = () => {
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import { AppRouter } from './Components/AppRouter/AppRouter';
+import { Template } from './Components/Template/Template';
+
+function App() {
   return (
-    <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Main} />
-      <Route path="/Starships" component={Starships} />
-      <Route path ="/Starships/Detail" component={Detail}/>
-      </Switch>
-    </BrowserRouter>
+   <AppRouter/>
   );
-};
+}
 
 export default App;

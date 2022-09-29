@@ -1,5 +1,5 @@
 import React from 'react'
-import notFound from '../../img/notFound.gif'
+import notFound from '../../img/404.png'
 export const NotFound = () => {
     return (
         <div className='not-found'>

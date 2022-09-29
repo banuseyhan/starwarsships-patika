@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react'
 
-export const Main = ({ content }) => {
-  return <main className="main">{content}</main>;
-};
+export const Main = ({content}) => {
+    return (
+        <main className='main'>
+            {content}
+        </main>
+    )
+}
