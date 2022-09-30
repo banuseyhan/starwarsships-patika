@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 //hooks
 import { useParams } from "react-router-dom";
-import { useFetching } from "../../Hooks/UseFetching";
-import { usePagesArray } from "../../Hooks/UsePagesArray";
+import { useFetching } from "../../../Hooks/UseFetching";
+import { usePagesArray } from "../../../Hooks/UsePagesArray";
 //service
-import CommonService from "../../Services/CommonService";
+import CommonService from "../../../Services/CommonService";
 //pages
-import { ErrorUrlPage } from "../ErrorPages/ErrorUrlPage";
-import { NotFound } from "../ErrorPages/NotFound";
-import { LinksList } from "../Links/LinksList";
-import { SearchForm } from "../SearchForm/SearchForm";
-import { Template } from "../Template/Template";
-import { Loader } from "../Extra/Loader/Loader";
-import { Pagination } from "../Extra/Pagination/Pagination";
+import { ErrorUrlPage } from "../../ErrorPages/ErrorUrlPage";
+import { NotFound } from "../../ErrorPages/NotFound";
+import { LinksList } from "../../Links/LinksList";
+import { SearchForm } from "../../SearchForm/SearchForm";
+import { Template } from "../../Template/Template";
+import { Loader } from "../../Extra/Loader/Loader";
+import { Pagination } from "../../Extra/Pagination/Pagination";
 //css
 import "./itempage.css";
 export const ItemPage = () => {

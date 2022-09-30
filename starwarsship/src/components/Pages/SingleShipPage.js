@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import CommonService from "../../Services/CommonService";
 import ShipService from "../../Services/ShipService";
 //css
-import "./singlepages.css";
+import "./SinglePage/singlepages.css";
 
 export const SingleShipPage = () => {
   const [ship, setShip] = useState({});

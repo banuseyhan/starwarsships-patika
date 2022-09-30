@@ -1,6 +1,9 @@
+
 .single-item__container {
   padding: 20px;
 }
+
+
 
 .single-item__title {
   text-align: center;
@@ -8,19 +11,26 @@
   font-size: 28px;
   color: #ffee58;
   margin-bottom: 5px;
+
 }
 
 .single-item__list-item {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
-}
 
+
+
+}
+.kutu{
+
+}
 .single-item__list-item h2 {
   color: #ffee58;
   font-weight: 700;
   font-size: 18px;
   text-transform: capitalize;
+
 }
 
 .single-item-title {
@@ -28,18 +38,26 @@
   font-weight: 700;
   font-size: 18px;
   text-transform: capitalize;
+
 }
 
 .single-item {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  
+
 }
 
 .single-item .single-item-list {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  transition: 0.4s;
+  position: relative;
+  border: 1px solid #ffee58;
+
+
 }
 
 .single-item a:hover {

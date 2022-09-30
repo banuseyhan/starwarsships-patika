@@ -1,8 +1,8 @@
 import { ErrorUrlPage } from "../ErrorPages/ErrorUrlPage";
-import { ItemPage } from "../Pages/ItemPage";
-import { MainPage } from "../Pages/MainPage";
+import { ItemPage } from "../Pages/ItemPage/ItemPage";
+import { MainPage } from "../Pages/MainPage/MainPage";
 import { SingleShipPage } from "../Pages/SingleShipPage";
-import { SinglePage } from "../Pages/SinglePage";
+import { SinglePage } from "../Pages/SinglePage/SinglePage";
 
 export const RoutesArray = [
   { path: "/", element: MainPage, exact: true },

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Template } from "../Template/Template";
-import { LinksList } from "../Links/LinksList";
+import { Template } from "../../Template/Template";
+import { LinksList } from "../../Links/LinksList";
 import { useParams } from "react-router-dom";
-import { useFetching } from "../../Hooks/UseFetching";
-import CommonService from "../../Services/CommonService";
-import { ErrorUrlPage } from "../ErrorPages/ErrorUrlPage";
-import { Loader } from "../Extra/Loader/Loader";
+import { useFetching } from "../../../Hooks/UseFetching";
+import CommonService from "../../../Services/CommonService";
+import { ErrorUrlPage } from "../../ErrorPages/ErrorUrlPage";
+import { Loader } from "../../Extra/Loader/Loader";
 
 export const SinglePage = () => {
   const { id, pathItem } = useParams();
@@ -41,7 +41,7 @@ export const SinglePage = () => {
         isDataLoaing ? (
           <Loader />
         ) : (
-          <div
+        <div
             style={{ color: "white" }}
             className="container single-item__container"
           >
@@ -55,10 +55,12 @@ export const SinglePage = () => {
                   key !== "url"
                 ) {
                   return (
+                    
                     <li key={key} className="single-item__list-item">
                       <h2>{key.replace("_", " ")}:</h2>
                       {data[key]}
                     </li>
+                    
                   );
                 }
               })}
