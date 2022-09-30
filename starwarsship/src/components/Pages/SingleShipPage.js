@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { LinksList } from "../Links/LinksList";
 import { Template } from "../Template/Template";
+//hooks
 import { useFetching } from "../../Hooks/UseFetching";
 import { useParams } from "react-router-dom";
+//service
 import CommonService from "../../Services/CommonService";
-import "./singlepages.css";
 import ShipService from "../../Services/ShipService";
+//css
+import "./singlepages.css";
 
 export const SingleShipPage = () => {
   const [ship, setShip] = useState({});
