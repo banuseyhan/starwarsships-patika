@@ -1,12 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import { AppRouter } from './Components/AppRouter/AppRouter';
-import { Template } from './Components/Template/Template';
+import "./App.css";
+import { AppRouter } from "./Components/AppRouter/AppRouter";
 
 function App() {
-  return (
-   <AppRouter/>
-  );
+  return <AppRouter />;
 }
 
 export default App;

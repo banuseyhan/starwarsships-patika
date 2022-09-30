@@ -1,6 +1,5 @@
-@import 'nullstyle.css';
+@import "nullstyle.css";
 
- body {
-	 font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
- 

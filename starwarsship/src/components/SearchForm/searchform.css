@@ -4,6 +4,7 @@
     margin-bottom: 10px;
     justify-content: center;
 }
+
 .searchform__input {
     border: 3px solid #ffee58;
     outline: none;
@@ -12,13 +13,16 @@
     border-radius: 5px;
     transition: 0.5s;
 }
+
 .searchform__input:focus {
     background-color: #fff;
 }
+
 .searchform__input::placeholder {
     color: #c4c1c1;
     font-style: italic;
 }
+
 .searchform__btn {
     background: none;
     padding: 3px 5px;
@@ -27,6 +31,7 @@
     border-radius: 5px;
     transition: 0.5s;
 }
+
 .searchform__btn:hover {
     background-color: #ffee58 44;
 }
