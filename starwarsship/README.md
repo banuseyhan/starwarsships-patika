@@ -1,8 +1,9 @@
 
 
+<img width="1512" alt="Ekran Resmi 2022-09-30 13 57 14" src="https://user-images.githubusercontent.com/95204399/193255798-1019d43e-9b78-4bd2-a41b-9dd3347daafc.png">
 
 
-<img width="1512" alt="Ekran Resmi 2022-09-29 21 50 51" src="https://user-images.githubusercontent.com/95204399/193255614-7a16cd46-3da2-4638-9993-04670bd03f60.png">.        !
+      
 
 
 
